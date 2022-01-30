@@ -1,0 +1,30 @@
+{
+  "name": "apedao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run deploy:development",
+    "clean": "rm -rf ./build/",
+    "compile": "truffle compile",
+    "deploy:rinkeby": "npm run clean && npm run compile && truffle migrate --network rinkeby"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.2.9",
+    "web3-provider-engine": "~15.0.12"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.1",
+    "dotenv": "^14.3.2",
+    "hardhat": "^2.8.3",
+    "truffle-contract": "^4.0.31",
+    "truffle-plugin-verify": "^0.5.21"
+  },
+  "license": "ISC"
+}
